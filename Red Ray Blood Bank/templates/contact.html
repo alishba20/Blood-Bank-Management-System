@@ -1,0 +1,121 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<header>
+    <nav>
+      <div class="logo">
+        <img src="/static/logo1.png" alt="Blood Bank Logo">
+        <span style="color:#fff;"><b> Blood Bank Management System</b> </span>
+      </div>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+<body>
+    <div class="container center-align"></div>
+    <div class="row" >
+<div class="col-sm-12 col-md-10 mx-auto bg-white rounded shadow">
+    <div class ="bg"></div>
+    <h1 style="color: #b41f0e; font-size: 35px; margin: 8px;"><b>Contact Us</b></h1>
+    <p style=" margin: 12px;">Please feel free to reach out to us using the contact information below.</p>
+
+      <div class="col-md-6">
+        <h2 style="color: #b41f0e; font-size: 30px";>Contact Information</h2>
+        <p><strong>Dr.Asma Geewala</strong>
+        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        <p><strong>Phone:</strong> 03342598003</p>
+        <p><strong>Email:</strong> Asma@gmail.com</p>
+      </div>
+
+        <div class="col-md-7">
+            <p><strong>Dr.Ali Khan</strong>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Phone:</strong> 03322725589</p>
+            <p><strong>Email:</strong> Ali203@gmail.com</p>
+        </div>
+    
+        <div class="col-md-8">
+            <h3 style="color: #b41f0e; font-size: 30px";>Business Hours</h3>
+            <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+            <p><strong>Saturday - Sunday:</strong> Closed</p>
+        </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+<style>/* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bg{
+        background-image: url("{% static 'download.jpg' %}");
+        height: 300px;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  body {
+    background-color: #981406; 
+  }
+  .center-align {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+    }
+    body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #981406;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+</style>
+   

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Bank Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/static/logo1.png" alt="Blood Bank Logo">
+        <span style="color:#fff;"><b> Blood Bank Management System</b> </span>
+      </div>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Blood Bank Management System</h1>
+      <p>Your Gateway to Saving Lives</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="/static/slider.png" alt="Feature 1">
+      <h2>Find Blood Donors</h2>
+      <p>Search our extensive database to find suitable blood donors in your area.</p>
+    </div>
+    <div class="feature">
+      <img src="/static/slider2.png" alt="Feature 2">
+      <h2>Donate Blood</h2>
+      <p>Be a hero by donating blood and helping those in need.</p>
+    </div>
+    <div class="feature">
+      <img src="/static/slider3.png" alt="Feature 3">
+      <h2>Manage Blood Inventory</h2>
+      <p>Efficiently manage and track the blood inventory to ensure availability when required.</p>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <h2>What Our Donors Say</h2>
+    <div class="testimonial-slider">
+      <div class="slide">
+        <img src="/static/testimonial-slider.png" alt="Testimonial 1">
+        <p>"The Blood Bank Management System has made it so easy for me to donate blood regularly. Highly recommended!"</p>
+        <p class="author">John Doe</p>
+      </div>
+      <div class="slide">
+        <img src="/static/testimonial-slider.png" alt="Testimonial 2">
+        <p>"I had an urgent need for blood, and the system helped me find a donor quickly. Thank you!"</p>
+        <p class="author">Jane Smith</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Blood Bank Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>/* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #981406;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+  display: flex;
+  align-items: center;
+}
+
+  .logo img {
+    height: 50px;
+    padding-right: 5px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .hero {
+    color: #b41f0e;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    padding-top: 20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    background-color: #b41f0e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #b41f0e;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  
+  .feature {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+  }
+  
+  .testimonial {
+    background-color: #f5dfdf;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .testimonial h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide {
+    max-width: 400px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .slide img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .slide p {
+    font-size: 16px;
+  }
+  
+  .slide .author {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #981406;
+    color: #fff;
+  }
+  </style>

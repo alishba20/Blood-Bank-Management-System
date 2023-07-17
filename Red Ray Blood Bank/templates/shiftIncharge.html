@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Bank Management System - Donor Entry</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<header>
+    <nav>
+      <div class="logo">
+        <img src="/static/logo1.png" alt="Blood Bank Logo">
+        <span style="color:#fff;"><b> Blood Bank Management System</b> </span>
+      </div>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+<body>
+    <div class="container center-align"></div>
+        <div class="row" >
+<div class="col-sm-12 col-md-10 mx-auto bg-white rounded shadow">
+    <p style="color: #b41f0e; font-size: 40px";> <b>Blood Bank Management System</b> </p>
+    <p style="color: #b41f0e; font-size: 30px";>Recipient Details</p>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender" name="gender" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+    </div>
+   
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" name="age" id="age" placeholder="Enter age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bloodGroup">Blood Group</label>
+        <select class="form-control" name="bloodGroup" id="bloodGroup" required>
+          <option value="">Select blood group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+      </div>
+       
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input type="tel" class="form-control" id="contact" name="contact" placeholder="Enter contact number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Branch">Branch</label>
+        <select class="form-control" name="branch" id="branch" required>
+          <option value="">Select branch</option>
+          <option value="Clifton Branch">Clifton Branch</option>
+          <option value="Johar Branch">Johar Branch</option>
+          <option value="Gulshan Branch">Gulshan Branch</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<style>
+    body {
+      background-color: #981406; /* Replace with your desired color */
+    }
+    
+    .center-align {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+    }
+    body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #981406;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #5d00ff;
+    height: fit-content;
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+
+
+  </style>
